@@ -1,5 +1,5 @@
-SQLite library build for Staticlibs
-===================================
+Duktape library build for Staticlibs
+====================================
 
 This project is a part of [Staticlibs](http://staticlibs.net/).
 
