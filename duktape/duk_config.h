@@ -1411,7 +1411,7 @@
 #endif
 
 /* Intermediate define for 'have inttypes.h' */
-#undef DUK_F_HAVE_INTTYPES
+#ifndef DUK_F_HAVE_INTTYPES
 #if defined(__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L) && \
     !(defined(DUK_F_AMIGAOS) && defined(DUK_F_VBCC))
 /* vbcc + AmigaOS has C99 but no inttypes.h */
@@ -1420,6 +1420,7 @@
 /* C++11 apparently ratified stdint.h */
 #define DUK_F_HAVE_INTTYPES
 #endif
+#endif // !DUK_F_HAVE_INTTYPES
 
 /* Basic integer typedefs and limits, preferably from inttypes.h, otherwise
  * through automatic detection.

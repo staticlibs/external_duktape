@@ -28,5 +28,6 @@ if ( STATICLIB_USE_DEPLIBS_CACHE )
 endif ( )
 
 add_library ( ${PROJECT_NAME} STATIC ${${PROJECT_NAME}_SOURCE_DIR}/duktape.c )
-set_source_files_properties ( ${${PROJECT_NAME}_SOURCE_DIR}/duktape.c PROPERTIES LANGUAGE CXX )
 target_include_directories ( ${PROJECT_NAME} BEFORE PRIVATE ${${PROJECT_NAME}_SOURCE_DIR} )
+target_compile_definitions ( ${PROJECT_NAME} PRIVATE
+        -DDUK_F_HAVE_INTTYPES )
