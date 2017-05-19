@@ -31,11 +31,12 @@ if ( NOT DEFINED STATICLIB_DEPS )
     set ( STATICLIB_DEPS ${CMAKE_CURRENT_LIST_DIR}/../../ CACHE INTERNAL "" )    
 endif ( )
 staticlib_add_subdirectory ( ${STATICLIB_DEPS}/staticlib_config )
+staticlib_add_subdirectory ( ${STATICLIB_DEPS}/staticlib_support )
 option ( ${PROJECT_NAME}_USE_SYSTEM_DEPS "Use system-provided dependencies" OFF )
 if ( NOT ${PROJECT_NAME}_USE_SYSTEM_DEPS )
     staticlib_add_subdirectory ( ${CMAKE_CURRENT_LIST_DIR}/../../external_duktape )
 endif ( )
-set ( ${PROJECT_NAME}_DEPS duktape staticlib_config )
+set ( ${PROJECT_NAME}_DEPS duktape staticlib_support staticlib_config )
 staticlib_pkg_check_modules ( ${PROJECT_NAME}_DEPS_PC REQUIRED ${PROJECT_NAME}_DEPS )
 
 # tests
