@@ -9788,7 +9788,7 @@ DUK_INTERNAL const duk_uint8_t duk_builtins_data[3833] = {
 
 /* include removed: duk_internal.h */
 
-#define DUK__ERRFMT_BUFSIZE  1024  /* size for formatting buffers */
+#define DUK__ERRFMT_BUFSIZE  4096  /* size for formatting buffers */
 
 #if defined(DUK_USE_VERBOSE_ERRORS)
 
