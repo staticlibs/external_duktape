@@ -34,8 +34,7 @@ target_include_directories ( ${PROJECT_NAME} BEFORE PRIVATE ${${PROJECT_NAME}_SO
 target_compile_definitions ( ${PROJECT_NAME} PRIVATE
         -DDUK_F_HAVE_INTTYPES 
         -DDUK_OPT_CPP_EXCEPTIONS
-        -DDUK_OPT_TRACEBACK_DEPTH=64
-        -DDUK_OPT_NO_BUFFEROBJECT_SUPPORT )
+        -DDUK_OPT_TRACEBACK_DEPTH=64 )
 if ( ${CMAKE_CXX_COMPILER_ID} MATCHES "GNU" OR ${CMAKE_CXX_COMPILER_ID} MATCHES "Clang" )
     target_compile_options ( ${PROJECT_NAME} PRIVATE
             -Wno-unused-parameter )
