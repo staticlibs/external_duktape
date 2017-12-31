@@ -15,7 +15,7 @@
 cmake_minimum_required ( VERSION 2.8.12 )
 
 project ( external_duktape C CXX )
-set ( ${PROJECT_NAME}_STATICLIB_VERSION 1.6.1-1 )
+set ( ${PROJECT_NAME}_STATICLIB_VERSION 1.6.1-2 )
 set ( ${PROJECT_NAME}_DESCRIPTION "Duktape library build for Staticlibs" )
 set ( ${PROJECT_NAME}_URL https://github.com/staticlibs/external_duktape.git )
 
