@@ -59624,6 +59624,7 @@ duk_regconst_t duk__ispec_toregconst_raw(duk_compiler_ctx *comp_ctx,
 		}
 		}  /* end switch */
 	}
+	// fall through
 	case DUK_ISPEC_REGCONST: {
 		if (forced_reg >= 0) {
 			if (x->regconst & DUK__CONST_MARKER) {
