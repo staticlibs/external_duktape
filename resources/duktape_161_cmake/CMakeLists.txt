@@ -39,6 +39,10 @@ if ( ${CMAKE_CXX_COMPILER_ID} MATCHES "GNU" OR ${CMAKE_CXX_COMPILER_ID} MATCHES 
     target_compile_options ( ${PROJECT_NAME} PRIVATE
             -Wno-unused-parameter )
 endif ( )
+if ( ${CMAKE_CXX_COMPILER_ID} MATCHES "Clang" )
+    target_compile_options ( ${PROJECT_NAME} PRIVATE
+            -Wno-deprecated )
+endif ( )
 if ( ${CMAKE_CXX_COMPILER_ID}x MATCHES "MSVCx" )
     target_compile_options ( ${PROJECT_NAME} PRIVATE
             /wd4100 /wd4127 /wd4551 /wd4505 /wd4701 /wd4702 )
