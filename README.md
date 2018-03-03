@@ -38,7 +38,13 @@ This project is released under the [Apache License 2.0](http://www.apache.org/li
 Changelog
 ---------
 
+**2018-01-18**
+
+ * version 1.6.1-3
+ * debug support
+
 **2017-12-31**
+
  * version 1.6.1-2
  * vs2017 support
 
