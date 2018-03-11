@@ -38,6 +38,11 @@ This project is released under the [Apache License 2.0](http://www.apache.org/li
 Changelog
 ---------
 
+**2018-03-11**
+
+ * version 1.6.1-4
+ * GCC 8 compatibility
+
 **2018-01-18**
 
  * version 1.6.1-3

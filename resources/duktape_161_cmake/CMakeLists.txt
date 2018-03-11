@@ -41,6 +41,10 @@ if ( ${CMAKE_CXX_COMPILER_ID} MATCHES "GNU" OR ${CMAKE_CXX_COMPILER_ID} MATCHES 
     target_compile_options ( ${PROJECT_NAME} PRIVATE
             -Wno-unused-parameter )
 endif ( )
+if ( ${CMAKE_CXX_COMPILER_ID} MATCHES "GNU" )
+    target_compile_options ( ${PROJECT_NAME} PRIVATE
+            -Wno-ignored-qualifiers )
+endif ( )
 if ( ${CMAKE_CXX_COMPILER_ID} MATCHES "Clang" )
     target_compile_options ( ${PROJECT_NAME} PRIVATE
             -Wno-deprecated )
